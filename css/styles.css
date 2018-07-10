@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+
+*{
+  font-family: 'Roboto';
+  margin: 0;
+}
+.banner{
+  background: yellow;
+  display: flex;
+  height: 300px;
+}
+.banner__item{
+  flex: 1;
+  color:#fff;
+  font-size: 1.2em;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  transition: flex .3s ease-in-out;
+}
+
+.banner__item:hover{
+  flex:10;
+  cursor: pointer;
+}
+
+.banner__item:hover .banner__title{
+  transform: rotate(0);
+}
+
+.banner__item:nth-child(1){
+  background: hsl(90, 100%, 40%);
+}
+
+.banner__item:nth-child(2){
+  background: hsl(30, 100%, 40%);
+}
+
+.banner__item:nth-child(3){
+  background: hsl(200, 100%, 40%);
+}
+
+.banner__item:nth-child(4){
+  background: hsl(280, 100%, 40%);
+}
+
+.banner__title{
+  margin: 0;
+  transform: rotate(-90deg);
+  transition: transform .3s .3s; 
+}
